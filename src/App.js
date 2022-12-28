@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Mounting from './Life_Cycle_methods/componentDidMount';
+import Updating from './Life_Cycle_methods/componentDidUpdate';
+import ShouldComponent from './Life_Cycle_methods/shouldComponentUpdate';
+import Unmount from './Life_Cycle_methods/componentWillUnmount/componentWillUnmount';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h2>Life Cycle Methods</h2>
+      <Mounting/>
+      <Updating/>
+      <ShouldComponent/>
+      <Unmount/>
     </div>
   );
 }
